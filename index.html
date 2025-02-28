@@ -3,58 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-     
-    <nav>
-        <li id="#home">Home </li>
-        <li id="#about">About</li>
-        <li id="#project">Projects</li>
-        <li id="#contact">Contact</li>
-    </nav>
-
-
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <main>
-          <article>
-               <section id="home" >
-                   <p>My Portfolio</p>          
-               </section>
 
-               <section id="about">
-                  <h2>About me</h2>
-                  <p>
-                    Hi i'm Jouselo Nakila
-                  </p>
-                  <br>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum magnam eius quas asperiores corrupti quae dolorum! Culpa eos unde distinctio hic. Aspernatur aut placeat totam perspiciatis ea iste, perferendis eum!
-                  </p>
-                </section>
+   
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                 <section id="project">
-                        <img src="download.png" alt="" height="200px">
-                        <img src="fullstacki.jpg" alt="" height="200px">
-                 </section>
+   
+    <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I’m a passionate web developer creating beautiful and functional websites.</p>
+    </section>
 
-                   <section id="contact">
-                       <input type="submit">Name
-                        <input type="email" name="Email" id="">Email
-                        <input type="text" width="20%" height="20%">Message
-                        <button>Send Message</button>
-                  </section>
+   
+    <section id="about">
+        <h2>About Me</h2>
+        <figure>
+            <img src="sung-jin-woo.jpg" alt="My Profile">
+        </figure>
+        <p>Hi, I'm Jouselo Nakila, a front-end developer specializing in HTML, CSS, and JavaScript.</p>
+    </section>
 
-               
-
-          </article>
-
-    </main>
     
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <article>
+                <h3>Project One</h3>
+                <p>Responsive website built with HTML, CSS, and JavaScript.</p>
+                <img src="download.png" alt="Project One">
+            </article>
+            <article>
+                <h3>Project Two</h3>
+                <p>CSS Grid and Flexbox showcase.</p>
+                <img src="fullstacki.jpg" alt="Project Two">
+            </article>
+        </div>
+    </section>
+
+   
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
 </body>
-<footer> 
-    <p>2025 My Portfolio.All rights reserved</p>
-</footer>
 </html>
+
